@@ -1,25 +1,12 @@
-#include <iostream>
 #include <vector>
-using namespace std;{
- Stats ComputeStatistics(const std::vector<___>& );
-int main() {
-  vector<int> num {1, 2, 3, 4, 5};
+enum Stats
+{
+  STATS_HP,
+  STATS_STR,
+  MAX_STATS
+};
 
-  cout << "Initial Vector: ";
 
-  for (const int& i : num) {
-    cout << i << "  ";
-  }
-  
-  
-  num.push_back(6);
-  num.push_back(7);
-
-  cout << "\nUpdated Vector: ";
-
-  for (const int& i : num) {
-    cout << i << "  ";
-  }
-
-  return 0;
+namespace Statistics {
+    Stats ComputeStatistics(const std::vector<float>& );
 }
